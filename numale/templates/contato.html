@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato</title>
+    <link rel="stylesheet" href="{% static 'css/contato.css' %}">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">NUMALE</h2>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; <!-- Ícone de "hambúrguer" -->
+            </div>
+            <nav class="toggle">
+                <a href="{% url 'inicio' %}">Inicio</a>
+                <a href="{% url 'inicio' %}">Membros</a>
+                <a href="{% url 'inicio' %}">Livros</a>
+                <a href="{% url 'contato' %}">Contato</a>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Contato</h1>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+
+                <div class="view-all">
+                    <a href="#">Enviar</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

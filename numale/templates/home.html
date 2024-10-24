@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMALE</title>
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link rel="icon" href="" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">NUMALE</h2>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; <!-- Ícone de "hambúrguer" -->
+            </div>
+            <nav class="toggle">
+                <a href="{% url 'inicio' %}">Inicio</a>
+                <a href="{% url 'inicio' %}">Membros</a>
+                <a href="{% url 'inicio' %}">Livros</a>
+                <a href="{% url 'contato' %}">Contato</a>
+            </nav>
+        </header>
+
+        <img src="{% static 'img/Image.jpg'%}" alt="">
+
+        <div class="text">
+            <h1>Bem-vindo ao Núcleo Mariense de Letras</h1>
+            <p>O NUMALE é um coletivo de Maria da Fé - MG, com a missão de promover e difundir a arte local em suas mais
+                diversas formas.</p>
+            <p>Junte-se a nós para celebrar a criatividade e o talento dos poetas locais em nossos saraus bimestrais.
+            </p>
+        </div>
+    </section>
+    <section class="showcase-homenageado">
+        <img src="{% static 'img/membros/JoséRegi.jpg' %}" alt="Poeta do Mês">
+        <div class="text-homenageado">
+            <h1>Homenageado do Mês</h1>
+            <p>Descubra a trajetória de um poeta que encanta com suas palavras. A cada mês, um novo artista é
+                homenageado.</p>
+            <p>Neste espaço, celebramos a vida e a obra de poetas que encantam nossa comunidade. Descubra suas histórias
+                e mergulhe nas poesias que tocam o coração.</p>
+            <div class="buttons-homenageado">
+                <a href="#" class="button-info">
+                    <div class="icon"></div>
+                    Biografia
+                </a>
+                <a href="#" class="button-info">
+                    <div class="icon"></div>
+                    Leia Mais
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="showcase-poesiadomes">
+        <img src="{% static 'img/custom/representação.jpeg' %}" alt="Poesia do Mês">
+        <div class="text-poesiadomes">
+            <h5>Poesia</h5>
+            <h1>Poesia do Mês</h1>
+            <p>A cada mês, celebramos a beleza das palavras com uma poesia especial que toca o coração e inspira a alma.
+                Mergulhe na sensibilidade e no talento dos nossos poetas locais, cujas criações refletem as emoções e
+                experiências da nossa comunidade. </p>
+            <div class="buttons-poesia">
+                <h2>Poema Selecionado</h2>
+                <p>Este mês, apresentamos "O Vento" do poeta José Regi.</p>
+                <a href="#" class="button">
+                    <div class="icon"></div>
+                    Ver poema
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="showcase-eventos">
+        <div class="header-eventos">
+            <h1>Eventos</h1>
+            <h2>Programação</h2>
+        </div>
+        <p class="descricao">Participe dos nossos saraus bimestrais e celebre a poesia com poetas locais e renomados.
+        </p>
+        <div class="data"><strong>Sab 19 Out</strong></div>
+
+        <div class="card event-card">
+            <div class="event-image"></div> <!-- Adicione aqui a imagem do evento -->
+            <div class="detalhes-evento">
+                <div class="horario">7:00 PM</div>
+                <div class="titulo-do-evento">Sarau de NUMALE</div>
+                <div class="descricao-do-evento">Junte-se a nós para uma noite cheia de música, poesia e criatividade.
+                </div>
+                <div class="local-do-evento">
+                    <div class="localizacao-icon"></div> <!-- Adicione aqui o ícone de localização -->
+                    Centro Cultural de Maria da Fé
+                </div>
+            </div>
+            <button class="button-ver-detalhes">Ver detalhes</button>
+        </div>
+    </section>
+    <section class="showcase-participe">
+        <div class="text-participe">
+            <h2>Como participar dos Saraus</h2>
+            <p> Os saraus do Núcleo Mariense de Letras são momentos de celebração da
+                poesia e da arte em todas suas vertentes que acontecem a cada bimestre,
+                onde poetas e artistas de todas as idades são convidados a compartilhar
+                suas obras e se conectar com a comunidade.</p>
+        </div>
+
+        <div class="participantes-options">
+            <div class="opicao-participantes">
+                <img src="{% static 'img/custom/Livros.jpg' %}" alt="Livros">
+                <h3>Inscreva-se, compartilhe seu talento</h3>
+                <p>Se você tem um poema, uma canção ou uma performance incrível, queremos ouvir! Envie sua proposta para
+                    o sarau e brilhe no nosso palco.</p>
+                <button>Submeter</button>
+            </div>
+            <div class="opicao-participantes">
+                <img src="{% static 'img/custom/publico.jpg' %}" alt="Público do evento">
+                <h3>Inscreva-se para os Próximos Saraus</h3>
+                <p>Junte-se a nós para uma noite cheia de música, poesia e criatividade. Você pode se inscrever para
+                    assistir ou se apresentar.</p>
+                <button>Inscreva-se ></button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="showcase-testemunho">
+
+        <img src="{% static 'img/custom/anahelouise.jpg' %}" alt="Ana Helouise">
+
+        <div class="testimonial-content">
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+            <blockquote class="quote">
+                "Participar do Sarau Numale foi uma experiência transformadora, onde a poesia se tornou a voz da nossa
+                comunidade."
+            </blockquote>
+            <div class="autor">
+                <p class="nome">Ana Helouise</p>
+                <p class="ocupacao">Desenvolvedora</p>
+            </div>
+        </div>
+    </section>
+    <section class="showcase-eventos">
+        <div class="card cta-card">
+            <div class="cta-content">
+                <h3 class="cta-title">Participe do nosso sarau!</h3>
+                <p class="cta-description">Registre-se para compartilhar suas poesias e participe dos nossos
+                    emocionantes saraus bimestrais.</p>
+                <button class="button cta-button">Inscreva-se</button>
+            </div>
+            <img src="{% static 'img/custom/carol.jpg' %}" alt="Pessoa sorrindo" class="cta-image">
+        </div>
+    </section>
+</body>
+
+</html>
